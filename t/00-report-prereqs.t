@@ -33,6 +33,7 @@ my @modules = qw(
   Dist::Zilla::Plugin::PodWeaver
   Dist::Zilla::Plugin::ReadmeAnyFromPod
   Dist::Zilla::Plugin::TaskWeaver
+  Dist::Zilla::Plugin::Test::CPAN::Changes
   Dist::Zilla::Plugin::Test::Compile
   Dist::Zilla::Plugin::Test::MinimumVersion
   Dist::Zilla::Plugin::Test::Perl::Critic
@@ -59,7 +60,6 @@ my @modules = qw(
   Pod::Elemental::Transformer::List
   Pod::Weaver
   Pod::Weaver::Config::Assembler
-  Pod::Weaver::Plugin::Encoding
   Pod::Weaver::Plugin::WikiDoc
   Pod::Weaver::Section::Contributors
   Pod::Weaver::Section::Support

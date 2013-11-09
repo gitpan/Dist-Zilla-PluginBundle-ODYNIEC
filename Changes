@@ -1,4 +1,7 @@
 Revision history for Dist-Zilla-PluginBundle-ODYNIEC
 
+0.020     2013-11-09
+          Added Test::CPAN::Changes
+
 0.010     2013-11-06
           Initial release

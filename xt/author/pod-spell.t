@@ -31,10 +31,14 @@ eric
 Karen
 Etheridge
 ether
+Michał
 Philippe
 Bruhat
 BooK
 book
+Sergey
+Romanov
+complefor
 lib
 Dist
 Zilla

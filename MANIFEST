@@ -1,11 +1,9 @@
-CONTRIBUTING
 Changes
 LICENSE
 MANIFEST
 META.json
 META.yml
 Makefile.PL
-README.mkdn
 corpus/DZ1/dist.ini
 corpus/DZ1/lib/DZ1.pm
 cpanfile
@@ -19,6 +17,7 @@ t/dagolden.t
 tidyall.ini
 xt/author/critic.t
 xt/author/pod-spell.t
+xt/release/cpan-changes.t
 xt/release/distmeta.t
 xt/release/minimum-version.t
 xt/release/pod-coverage.t

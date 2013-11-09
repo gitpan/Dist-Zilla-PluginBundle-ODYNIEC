@@ -2,14 +2,13 @@ use strict;
 use warnings;
 
 package Pod::Weaver::PluginBundle::ODYNIEC;
-our $VERSION = '0.010'; # VERSION
+our $VERSION = '0.020'; # VERSION
 
 use Pod::Weaver 4; # he played knick-knack on my door
 use Pod::Weaver::Config::Assembler;
 
 # Dependencies
 use Pod::Weaver::Plugin::WikiDoc  ();
-use Pod::Weaver::Plugin::Encoding ();
 use Pod::Elemental::Transformer::List 0.101620 ();
 use Pod::Weaver::Section::Support 1.001        ();
 use Pod::Weaver::Section::Contributors 0.001   ();
@@ -106,14 +105,12 @@ Pod::Weaver::PluginBundle::ODYNIEC - ODYNIEC's default Pod::Weaver config
 
 =head1 VERSION
 
-version 0.010
+version 0.020
 
 =head1 DESCRIPTION
 
 This is a L<Pod::Weaver> PluginBundle.  It is roughly equivalent to the
 following weaver.ini:
-
-  [-Encoding]
 
   [-WikiDoc]
 
