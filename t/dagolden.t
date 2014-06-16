@@ -19,7 +19,7 @@ done_testing;
 #
 # This file is part of Dist-Zilla-PluginBundle-ODYNIEC
 #
-# This software is Copyright (c) 2013 by Michal Wojciechowski.
+# This software is Copyright (c) 2014 by Michal Wojciechowski.
 #
 # This is free software, licensed under:
 #

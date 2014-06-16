@@ -16,10 +16,11 @@ build_requires:
   Test::DZil: 0
   Test::More: 0.96
   perl: 5.008001
+  version: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.17
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 5.005, CPAN::Meta::Converter version 2.120921'
+generated_by: 'Dist::Zilla version 5.019, CPAN::Meta::Converter version 2.133380'
 license: apache
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -36,10 +37,10 @@ no_index:
 provides:
   Dist::Zilla::PluginBundle::ODYNIEC:
     file: lib/Dist/Zilla/PluginBundle/ODYNIEC.pm
-    version: 0.020
+    version: 0.021
   Pod::Weaver::PluginBundle::ODYNIEC:
     file: lib/Pod/Weaver/PluginBundle/ODYNIEC.pm
-    version: 0.020
+    version: 0.021
 requires:
   Dist::Zilla: 5
   Dist::Zilla::Plugin::Bugtracker: 1.110
@@ -91,7 +92,7 @@ resources:
   bugtracker: https://github.com/odyniec/p5-Dist-Zilla-PluginBundle-ODYNIEC/issues
   homepage: https://github.com/odyniec/p5-Dist-Zilla-PluginBundle-ODYNIEC
   repository: https://github.com/odyniec/p5-Dist-Zilla-PluginBundle-ODYNIEC.git
-version: 0.020
+version: 0.021
 x_contributors:
   - 'Christian Walde <walde.christian@googlemail.com>'
   - 'Eric Johnson <eric.git@iijo.org>'

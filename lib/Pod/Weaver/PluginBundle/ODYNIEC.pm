@@ -2,7 +2,7 @@ use strict;
 use warnings;
 
 package Pod::Weaver::PluginBundle::ODYNIEC;
-our $VERSION = '0.020'; # VERSION
+our $VERSION = '0.021'; # VERSION
 
 use Pod::Weaver 4; # he played knick-knack on my door
 use Pod::Weaver::Config::Assembler;
@@ -84,7 +84,7 @@ sub mvp_bundle_config {
 #
 # This file is part of Dist-Zilla-PluginBundle-ODYNIEC
 #
-# This software is Copyright (c) 2013 by Michal Wojciechowski.
+# This software is Copyright (c) 2014 by Michal Wojciechowski.
 #
 # This is free software, licensed under:
 #
@@ -105,7 +105,7 @@ Pod::Weaver::PluginBundle::ODYNIEC - ODYNIEC's default Pod::Weaver config
 
 =head1 VERSION
 
-version 0.020
+version 0.021
 
 =head1 DESCRIPTION
 
@@ -208,7 +208,7 @@ Michal Wojciechowski <odyniec@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2013 by Michal Wojciechowski.
+This software is Copyright (c) 2014 by Michal Wojciechowski.
 
 This is free software, licensed under:
 

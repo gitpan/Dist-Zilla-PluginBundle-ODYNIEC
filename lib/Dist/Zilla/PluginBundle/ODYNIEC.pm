@@ -2,7 +2,7 @@ use strict;
 use warnings;
 
 package Dist::Zilla::PluginBundle::ODYNIEC;
-our $VERSION = '0.020'; # VERSION
+our $VERSION = '0.021'; # VERSION
 
 # Dependencies
 use autodie 2.00;
@@ -51,10 +51,10 @@ sub mvp_multivalue_args { qw/stopwords/ }
 
 has stopwords => (
     is      => 'ro',
-    isa     => 'ArrayRef',
+    isa     => 'Maybe[ArrayRef]',
     lazy    => 1,
-    default => sub {
-        exists $_[0]->payload->{stopwords} ? $_[0]->payload->{stopwords} : [];
+    default => sub { 
+        exists $_[0]->payload->{stopwords} ? $_[0]->payload->{stopwords} : undef;
     },
 );
 
@@ -253,7 +253,7 @@ sub configure {
         ),
         (
             $self->no_spellcheck ? ()
-            : [ 'Test::PodSpelling' => { stopwords => $self->stopwords } ]
+            : [ 'Test::PodSpelling' => $self->stopwords ? { stopwords => $self->stopwords } : () ]
             # xt/author/pod-spell.t
         ),
         (
@@ -396,7 +396,7 @@ __PACKAGE__->meta->make_immutable;
 #
 # This file is part of Dist-Zilla-PluginBundle-ODYNIEC
 #
-# This software is Copyright (c) 2013 by Michal Wojciechowski.
+# This software is Copyright (c) 2014 by Michal Wojciechowski.
 #
 # This is free software, licensed under:
 #
@@ -415,7 +415,7 @@ Dist::Zilla::PluginBundle::ODYNIEC - Dist::Zilla configuration the way ODYNIEC d
 
 =head1 VERSION
 
-version 0.020
+version 0.021
 
 =head1 SYNOPSIS
 
@@ -723,7 +723,7 @@ Sergey Romanov <complefor@rambler.ru>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2013 by Michal Wojciechowski.
+This software is Copyright (c) 2014 by Michal Wojciechowski.
 
 This is free software, licensed under:
 
